@@ -2,7 +2,7 @@
 
 ## What is it?
 
-Using Cloudflare Workers, you'll deploy an application that will randomly send users to one of two webpages. This project will teach you how to write applications with the Cloudflare Workers API, manage and develop them using the command-line tool Wrangler, and deploy them to the free workers.dev deployment playground.
+Using Cloudflare Workers and command-line tool, Wrangler, I deployed an application that will randomly send users to one of two webpages.
 
 ## Useful Links
 
@@ -15,7 +15,7 @@ Using Cloudflare Workers, you'll deploy an application that will randomly send u
 
 ### 1. Install the workers command-line tool wrangler.
 
-The Workers Quick Start in the documentation shows how to get started with Wrangler, creating a project, and configuring and deploying it. We highly recommend that you spend time reading and following along with this guide!
+The Workers Quick Start in the documentation shows how to get started with Wrangler, creating a project, and configuring and deploying it. It is highly recommended to spend time reading and following along with the guide!
 
 To begin, install the [Wrangler](https://github.com/cloudflare/wrangler) command-line tool.
 
@@ -32,6 +32,8 @@ $ wrangler generate your-project-name https://github.com/cloudflare-internship-2
 The recently launched [`wrangler dev`](https://github.com/cloudflare/wrangler#-dev) feature will allow you to begin developing your application using `localhost` - this means that you can test your project locally and make sure it works, without having to sort out deployment until later in the exercise.
 
 Note that a major benefit of using `wrangler dev` is the ability to output `console.log` statements to your terminal - this is super useful for inspecting HTTP responses and variables!
+
+Alternatively, `wrangler preview --watch` can be used.
 
 ## Requirements
 
@@ -57,11 +59,7 @@ Every Workers user has access to a free, unique workers.dev subdomain, which all
 
 Using wrangler's `publish` command, you can deploy your application and make it available under your workers.dev subdomain. Make sure to include this when you submit your project!
 
-## Submitting your project
-
-When submitting your project, you should prepare your code for upload to Greenhouse. The preferred method for doing this is to create a "ZIP archive" of your project folder: for more instructions on how to do this on Windows and Mac, see [this guide](https://www.sweetwater.com/sweetcare/articles/how-to-zip-and-unzip-files/).
-
-In addition to submitting your project code, you should also submit the URL of your deployed project (see "Deployment"). This will be in the format `your-project-name.your-subdomain.workers.dev`.
+**Deployment URL:** [ademola-internship.salamiolokun.workers.dev](https://ademola-internship.salamiolokun.workers.dev)
 
 ## Extra Credit
 
