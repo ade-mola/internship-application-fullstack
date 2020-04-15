@@ -57,27 +57,7 @@ Every Workers user has access to a free, unique workers.dev subdomain, which all
 
 ### 2. A user should be able to visit the deployed version of the site
 
-Using wrangler's `publish` command, you can deploy your application and make it available under your workers.dev subdomain. Make sure to include this when you submit your project!
+Using wrangler's `publish` command, you can deploy your application and make it available under your workers.dev subdomain.
+
 
 **Deployment URL:** [ademola-internship.salamiolokun.workers.dev](https://ademola-internship.salamiolokun.workers.dev)
-
-## Extra Credit
-
-### 1. Changing copy/URLs
-
-For each variant page, there are a number of items on the page that can be customized. Try changing the following values inside of the variant, adding your own text or URLs:
-
-- `title`: the title of the web page, displayed on the window or tab title in your browser.
-- `h1#title`: the main title of the page. By default, this displays "Variant 1" or "Variant 2"
-- `p#description`: the description paragraph on the page. By default, this displays the text "This is variant X of the take home project!".
-- `a#url`: a Call to Action link with strong emphasis on the page. Try changing this to a URL of your choice, such as your personal website, and make sure to update the text "Return to cloudflare.com" as well!
-
-This can be done using the [HTMLRewriter](https://developers.cloudflare.com/workers/reference/apis/html-rewriter/) API built into the Workers runtime, or using simple text replacement.
-
-### 2. Persisting variants
-
-If a user visits the site and receives one of the two URLs, persist which URL is chosen in a cookie so that they always see the same variant when they return to the application. A cookie would be a great way to implement this!
-
-### 3. Publish to a domain
-
-If you have a registered domain/zone with Cloudflare, try deploying your project by customizing the `zone_id` and `route` in your `wrangler.toml`. Make sure to check out the [Quick Start](https://developers.cloudflare.com/workers/quickstart) in the Workers docs for details on how to do this! **Note:** domains cost money, so if you don't have one, please don't feel obligated to buy one for this exercise. This is an extra credit task and you won't be penalized for skipping this one, we promise!
